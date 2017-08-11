@@ -1,11 +1,12 @@
 # ref_count_test
 An incomplete comparison of alternative reference counting mechanisms. Currently more of a rough guestimate of their performance than actual realistic comparison.
+
 -----
 ## Results
-
 Run on (16 X 3600 MHz CPU s)
 2017-08-11 21:25:06
 ***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+
 --------------------------------------------------------------------------------------------
 Benchmark                                                     Time           CPU Iterations
 --------------------------------------------------------------------------------------------
