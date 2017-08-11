@@ -90,7 +90,7 @@ static void BM_ContestedAtomicIncrementAndDecrement(benchmark::State& state) {
 BENCHMARK(BM_ContestedAtomicIncrementAndDecrement)->Threads( 16 );
 
 // How was we would externalize the reference counters to a hash table outside the actual objects.
-// TODO: Add a hash table benchmark with some values filles.
+// TODO: Add a hash table benchmark with some values.
 static void BM_UnorderedMapInsertAndErase(benchmark::State& state) {
     std::unordered_map< counter_t, counter_t > values;
     int64_t value =0;
@@ -103,7 +103,7 @@ static void BM_UnorderedMapInsertAndErase(benchmark::State& state) {
 BENCHMARK(BM_UnorderedMapInsertAndErase)->Threads( 16 );
 
 // How was we would externalize the reference counters to a thread local hash table outside the actual objects.
-// TODO: Add a hash table benchmark with some values filles.
+// TODO: Add a hash table benchmark with some values.
 static thread_local std::unordered_map< counter_t, counter_t > thread_values;
 static void BM_ThreadLocalUnorderedMapInsertAndErase(benchmark::State& state) {
     int64_t value =0;
